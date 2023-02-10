@@ -1,0 +1,14 @@
+create database thinkbridge_db;
+
+use thinkbridge_db ;
+
+create table inventory (
+    product_id int primary key auto_increment,
+    name varchar(50) NOT NULL UNIQUE,
+    description varchar(50) NOT NULL,
+    unit_price double NOT NULL,
+    qty int NOT NULL
+
+);
+
+insert into inventory (product_id,name,description,unit_price,qty) values(101,'Book','science and technology',150,20);
